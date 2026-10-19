@@ -7,9 +7,10 @@ import main from "../assets/main.png";
 
 function MainPage() {
 
-    const API = "https://ghibliapi.vercel.app/films";
+  const API = "https://ghibliapi.vercel.app/films/";
     const dispatch = useDispatch();
     const movies = useSelector((state) => state.movies);
+    
     const [search , setSearch] = useState("");
     useEffect(() => {
         fetch(API).then((res) => {
@@ -17,6 +18,7 @@ function MainPage() {
                 dispatch(GetData(data));
 
             });
+            
         });
     }, [dispatch])
 
@@ -47,7 +49,10 @@ function MainPage() {
                 </div>
 
                 <div className="logout">
-                    <button>Logout</button>
+                    <button onClick={()=>{
+                        localStorage.removeItem("token");
+                        location.href = "/";
+                    }}>Logout</button>
                 </div>
             </div>
             <div>

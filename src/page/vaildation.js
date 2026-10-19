@@ -7,3 +7,12 @@ export function ProtectedRoute({children}){
     return children;
 
 } 
+export function Logout({children}){
+
+    if(!localStorage.getItem("token")){
+        location.href =  "/";
+        return null;
+    }
+    return children;
+
+} 
