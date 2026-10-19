@@ -1,0 +1,128 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+ img
+{
+  height: 200px;
+  width:300px;
+} 
+.color{
+  /* background-color: rgba(0, 0, 0, 0.863); */
+  height: 100vh;
+  /* backdrop-filter: blur(3px); */
+}
+.logo{
+  height: 120px;
+  margin-left: 80px;
+}
+.color h1{
+  font-size: 40px;
+  text-align: center;
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    border-radius: 20px;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: 300px;
+    margin-top: 30px;
+
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+form{
+  margin-left: 30px;
+}
+input{
+  width: 400px;
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+}
+input:focus{
+  outline: none;
+}
+.color button{
+  background-color: rgb(255, 106, 0);
+  border: none;
+  border-radius: 10px;
+  width: 400px;
+  font-size: 20px;
+  box-shadow: 2px 2px 10px rgb(255, 161, 93);
+}
+.color button:hover{
+  box-shadow: 5px 5px 15px rgba(255, 106, 0, 0.85);
+}
+hr{
+  width: 200px;
+  
+}
+.google{
+  height: 30px;
+  width: 40px;
+  margin-left: 20px;
+}
+.or{
+  margin-top: 20px;
+}
+.googleBtn{
+  padding-left: 50px;
+}
+
+
+/* ============================================== */
+
+.nav{
+  box-shadow: 2px 2px 5px gray;
+  justify-content: space-between;
+  padding: 0px 50px;
+}
+.nav img{
+  height: 80px;
+  width: 200px;
+  margin-top: 10px;
+}
+.search
+{
+  border: 1px solid rgb(235, 120, 5);
+  box-shadow: 1px 2px 5px rgb(235, 120, 5);
+  height: 50px;
+  border-radius: 10px;
+  margin-top: 30px;
+  font-size: 15px;
+}
+.search input {
+  background-color: transparent;
+  color: white;
+}
+.logout button{
+ background-color: rgb(255, 106, 0);
+  border: none;
+  border-radius: 10px;
+  width: 100px;
+  font-size: 20px;
+  color: white;
+  margin-top: 30px;
+padding: 10px;
+  box-shadow: 1px 2px 5px rgb(235, 120, 5);
+
+}
+.name{
+  color: white;
+  font-size: 70px;
+ 
+}
+span{
+color:rgb(235, 120, 5) ;
+}
+p{
+  text-align: center;
+  color: white;
+}
+.box{
+  background-color: aqua;
+}
