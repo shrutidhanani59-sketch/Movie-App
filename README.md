@@ -70,16 +70,16 @@ CineVerse
 ## 🖼️ Screenshots
 
 ### Login Page
-![CineVerse Login](Screenshot.png)
+![CineVerse Login](Screenshot .png)
 
 ### Main Page
-![CineVerse Login](Screenshot2.png)
+![CineVerse main](Screenshot2.png)
 
 ### Searching Page
-![CineVerse Login](Screenshot3.png)
+![CineVerse Searching](Screenshot3.png)
 
 ### No Data found
-![CineVerse Login](Screenshot4.png)
+![CineVerse No Data found](Screenshot4.png)
 
 ### Add form
-![CineVerse Login](Screenshot5.png)
+![CineVerse Add form](Screenshot5.png)
