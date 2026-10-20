@@ -70,7 +70,7 @@ CineVerse
 ## 🖼️ Screenshots
 
 ### Login Page
-![CineVerse Login](Screenshot .png)
+![CineVerse Login](Screenshot.png)
 
 ### Main Page
 ![CineVerse main](Screenshot2.png)
