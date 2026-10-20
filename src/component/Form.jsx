@@ -1,5 +1,8 @@
 import { useState } from "react";
 import main from "../assets/main.png";
+import { useDispatch } from "react-redux";
+import { AddData} from "../Redux/action"
+import { useNavigate } from "react-router-dom";
 
 function form (){
 
@@ -8,6 +11,26 @@ function form (){
     const [director , setDirector] = useState("");
     const [producer , setProducer] = useState("");
     const [description , setDescription] = useState("");
+    const [img , setImg] = useState("");
+
+    const dispatch = useDispatch();
+    const navigate = useNavigate();
+
+    const handleadd = (e)=>{
+        e.preventDefault();
+
+        const newmovie = {
+    id: Date.now(),
+    title: title,
+    release_date: year,
+    director: director,
+    producer: producer,
+    description: description,
+    image: ""
+};
+        dispatch(AddData(newmovie));
+        navigate ('/main');
+    }
     return(
             <div
          className="min-h-screen bg-cover bg-center bg-no-repeat"
@@ -22,24 +45,27 @@ function form (){
        }}
        >
             <div className="formBox">
-                <h1 className="text-white fw-bold text-center mt-4 mb-3">+ ADD MOVIE</h1>
+                <h1 className="text-white fw-bold text-center mt-4 mb-4">🎬 + ADD MOVIE</h1>
 
-                <lable className="text-white ">Movie Title</lable><br/>
+                <label className="text-white ">Image URL</label>
+                <input type="text" placeholder="Enter Img URL" onChange={(e)=>{setImg(e.target.value)}}/>
+
+                <label className="text-white mt-4 ">Movie Title</label><br/>
                 <input type="text" placeholder="Enter Movie title" onChange={(e)=>{setTitle(e.target.value)}}/><br/><br/>
 
-                <lable className="text-white " >Release Year</lable><br/>
+                <label className="text-white " >Release Year</label><br/>
                 <input type="text" placeholder="e.g.2024" onChange={(e)=>{setYear(e.target.value)}} /><br/><br/>
 
-                <lable className="text-white ">Director</lable><br/>
+                <label className="text-white ">Director</label><br/>
                 <input type="text" placeholder="Director name" onChange={(e)=>{setDirector(e.target.value)}}/><br/><br/>
 
-                <lable className="text-white ">Producer</lable><br/>
+                <label className="text-white ">Producer</label><br/>
                 <input type="text" placeholder="Producer name" onChange={(e)=>{setProducer(e.target.value)}} /><br/><br/>
 
-                <lable className="text-white ">Description</lable><br/>
+                <label className="text-white ">Description</label><br/>
                 <input type="text" placeholder="Write about the movie..." onChange={(e)=>{setDescription(e.target.value)}}/><br/><br/>
 
-                <button>+ Add Movie</button>
+                <button onClick={handleadd}>+ Add Movie</button>
 
             </div>
        </div>

@@ -1,17 +1,85 @@
-# React + Vite
+# 🎬 CineVerse — Movie Discovery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a Movie Discovery App . This App name is CineVerse . This app build using ReactJs. Navigate , Routes , Protected Routes , Redux , Add and Searching ect. topics are cover. The application features a modern dark theme with orange accents and a cinematic background.  
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+🎥 Movie Collection
 
-## React Compiler
+🔍 Search Movies
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+➕ Add New Movie
 
-## Expanding the ESLint configuration
+🔄 Redux State Management
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# Movie-App" 
+🎨 Modern UI
+
+🔐 Login Page
+
+🚪 Logout
+
+❌ No Movies Found
+
+🧭 Navigation
+
+🛠️ Technologies Used
+
+React.js
+
+JavaScript
+
+Redux
+
+React Redux
+
+React Router DOM
+
+Axios
+
+Bootstrap
+
+HTML5
+
+CSS3
+
+Vite
+
+📂 Project Structure
+
+CineVerse
+- src
+
+ - assets
+  - logo.png
+  - main.png
+
+- component
+ - Login.jsx
+ - MainPage.jsx
+ - Form.jsx
+
+-Redux
+ -action.js
+ - reducer.js
+ - store.js
+
+- page
+ - vaildation.jsx
+
+
+## 🖼️ Screenshots
+
+### Login Page
+![CineVerse Login](Screenshot.png)
+
+### Main Page
+![CineVerse Login](Screenshot2.png)
+
+### Searching Page
+![CineVerse Login](Screenshot3.png)
+
+### No Data found
+![CineVerse Login](Screenshot4.png)
+
+### Add form
+![CineVerse Login](Screenshot5.png)
