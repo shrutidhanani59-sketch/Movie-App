@@ -49,22 +49,22 @@ Vite
 CineVerse
 - src
 
- - assets
-  - logo.png
-  - main.png
+   - assets
+      - logo.png
+      - main.png
 
-- component
- - Login.jsx
- - MainPage.jsx
- - Form.jsx
+    - component
+       - Login.jsx
+       - MainPage.jsx
+       - Form.jsx
 
--Redux
- -action.js
- - reducer.js
- - store.js
+    - Redux
+       - action.js
+       - reducer.js
+       - store.js
 
-- page
- - vaildation.jsx
+    - page
+       - vaildation.jsx
 
 
 ## 🖼️ Screenshots
