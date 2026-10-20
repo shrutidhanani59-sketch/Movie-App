@@ -6,11 +6,11 @@ const initialState = {
 
 const Reducer = (state = initialState , action)=>{
     switch (action.type) {
-        case "GET_DATA":
-           return{
-                ...state,
-                 movies: action.data
-           }
+       
+        case "ADD_DATA":
+            return{
+               ...state,movies:[...state.movies , action.data] 
+            }
     default:
       return state;
         
@@ -18,3 +18,4 @@ const Reducer = (state = initialState , action)=>{
 }
 
 export default Reducer;
+

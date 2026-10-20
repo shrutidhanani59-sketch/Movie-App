@@ -1,6 +1,8 @@
-export const GetData = (movie)=>{
+
+
+export const AddData = (movie)=>{
     return{
-        type : "GET_DATA",
-        data : movie
-    };
-};
+        type : "ADD_DATA",
+        data :movie
+    }
+}

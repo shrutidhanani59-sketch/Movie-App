@@ -99,7 +99,7 @@ hr{
   background-color: transparent;
   color: white;
 }
-.logout button{
+.logoutBtn{
  background-color: rgb(255, 106, 0);
   border: none;
   border-radius: 10px;
@@ -125,4 +125,50 @@ p{
 }
 .box{
   background-color: aqua;
+}
+.add{
+  background-color: rgb(255, 106, 0);
+  border: none;
+  border-radius: 10px;
+  width: 200px;
+  font-size: 20px;
+  color: white;
+  margin-top: 30px;
+padding: 10px;
+  box-shadow: 1px 2px 5px rgb(235, 120, 5);
+  margin-right: 20px;
+
+}
+.formBox{
+  border: 1px solid orangered;
+  width: 500px;
+  border-radius: 10px;
+  padding: 20px;
+  margin-left: 700px;
+  position: relative;
+  top: 100px;
+  box-shadow: 3px 3px 15px rgb(238, 170, 146);
+
+  
+}
+.formBox lable{
+  font-size: 25px;
+}
+.formBox input{
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 20px;
+  width: 100%;
+  color: white;
+  margin-top: 5px;
+}
+.formBox button{
+  background-color: orangered;
+  border: none;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+  font-size: 15px;
+  margin-top: 10px;
 }

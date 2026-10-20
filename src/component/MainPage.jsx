@@ -1,28 +1,31 @@
 // import Reducer from "../Redux/reducer";
-import { GetData } from "../Redux/action";
-import { useDispatch, useSelector } from "react-redux";
-import { useEffect, useState } from "react";
+// import { GetData , AddData } from "../Redux/action";
+// import { useDispatch, useSelector } from "react-redux";
+import {  useEffect, useState } from "react";
 import logo from "../assets/logo.png";
 import main from "../assets/main.png";
+import { useNavigate } from "react-router-dom";
+import axios from "axios";
 
 function MainPage() {
 
   const API = "https://ghibliapi.vercel.app/films/";
-    const dispatch = useDispatch();
-    const movies = useSelector((state) => state.movies);
+  const [data, setData] = useState([]);
+    
+  useEffect(()=>{
+    axios.get(API).then((res)=>{
+    setData(res.data);
+  })
+  })
     
     const [search , setSearch] = useState("");
-    useEffect(() => {
-        fetch(API).then((res) => {
-            res.json().then((data) => {
-                dispatch(GetData(data));
-
-            });
-            
-        });
-    }, [dispatch])
-
     
+
+    const navigate = useNavigate();
+
+    const AddBtn = ()=>{
+        navigate("/form");
+    }
 
     return (
 
@@ -34,7 +37,7 @@ function MainPage() {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundAttachment: "fixed",
-    height : "100vh"
+    
 }}
 >
             <div className="nav  " style={{width : "100%"}}>
@@ -47,9 +50,11 @@ function MainPage() {
                     onChange={(e)=>{setSearch(e.target.value)}}
                     />
                 </div>
+                
+                <div className="buttons">
+                    <button className="add" onClick={AddBtn}>+ Add Movie</button>
 
-                <div className="logout">
-                    <button onClick={()=>{
+                    <button className="logoutBtn" onClick={()=>{
                         localStorage.removeItem("token");
                         location.href = "/";
                     }}>Logout</button>
@@ -65,7 +70,7 @@ function MainPage() {
                     <p>Explore amazing stories from studio Ghibli</p>
 
                     <div className="row g-4">
-    {movies.filter((element)=>{
+    {data.filter((element)=>{
         return element.title.toLowerCase().includes(search.toLowerCase());
     }) .map((movie) => (
         <div className="col-12 col-sm-6 col-lg-4" key={movie.id}>
