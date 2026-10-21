@@ -22,7 +22,9 @@ This is a Movie Discovery App . This App name is CineVerse . This app build usin
 
 🧭 Navigation
 
-🛠️ Technologies Used
+
+
+## 🛠️ Technologies Used
 
 React.js
 
