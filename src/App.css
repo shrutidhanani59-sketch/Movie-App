@@ -9,9 +9,7 @@
   width:300px;
 } 
 .color{
-  /* background-color: rgba(0, 0, 0, 0.863); */
   height: 100vh;
-  /* backdrop-filter: blur(3px); */
 }
 .logo{
   height: 120px;
@@ -30,7 +28,6 @@
     margin-left: auto;
     margin-right: 300px;
     margin-top: 30px;
-
     backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.2);
 }
@@ -59,7 +56,6 @@ input:focus{
 }
 hr{
   width: 200px;
-  
 }
 .google{
   height: 30px;
@@ -74,7 +70,7 @@ hr{
 }
 
 
-/* ============================================== */
+/* ============================================== Home */
 
 .nav{
   box-shadow: 2px 2px 5px gray;
@@ -134,7 +130,7 @@ p{
   font-size: 20px;
   color: white;
   margin-top: 30px;
-padding: 10px;
+  padding: 10px;
   box-shadow: 1px 2px 5px rgb(235, 120, 5);
   margin-right: 20px;
 
@@ -146,17 +142,15 @@ padding: 10px;
   padding: 20px;
   margin-left: 700px;
   position: relative;
-  top: 100px;
+  top: 40px;
   box-shadow: 3px 3px 15px rgb(238, 170, 146);
-
-  
 }
-.formBox lable{
+.formBox label{
   font-size: 25px;
 }
 .formBox input{
   background-color: transparent;
-  border: 1px solid white;
+  border: 1px solid white; 
   padding: 20px;
   width: 100%;
   color: white;

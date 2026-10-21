@@ -16,6 +16,7 @@ function MainPage() {
      const [search, setSearch] = useState("");
 
     const allmovie = [...data, ...(addedMovies)];
+
     const filterMovie = allmovie.filter((element)=>{
         return element.title.toLowerCase().includes(search.toLowerCase());
     })
@@ -24,9 +25,6 @@ function MainPage() {
             setData(res.data);
         });
     }, [])
-
-   
-
 
     const navigate = useNavigate();
 
