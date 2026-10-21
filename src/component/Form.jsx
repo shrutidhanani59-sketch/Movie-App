@@ -26,7 +26,7 @@ function form (){
     director: director,
     producer: producer,
     description: description,
-    image: ""
+    img: img
 };
         dispatch(AddData(newmovie));
         navigate ('/main');
